@@ -298,7 +298,7 @@ text-align: left;
   letter-spacing: 0.03em;
  }
 .our-team .profession{
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .our-team .name {
@@ -307,6 +307,48 @@ text-align: left;
   margin-top: 30px;
   margin-bottom: 10px;
 }
+.social-link{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.social-item{
+  display: inline-flex;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+
+.social-icon{
+  width: 20px;
+  height: 20px;
+
+}
+/* Our customers */
+.customers{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  
+  
+}
+.customers-list{
+  display: inline-flex;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  margin-right: 30px;
+  flex-basis: calc((100% / 6) - 30px);
+  
+  background-position: center;
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.customers-list:last-child{
+  margin-right: 0px;
+}
+
 
 /*Footer*/
 .footer {
