@@ -103,22 +103,37 @@ body {
 /*Contacts*/
 .contact{
   display: flex;
-  margin-left: auto;
 }
-
-
-.contact :not( :last-child) { 
-  margin-right: 50px; 
+.contact-list{
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+.contact-list .link{
+display: flex;
+}
+.contact :not(:last-child){
+  margin-right: 30px;
 }
 .contact .link {
   color: var(--primary-text-color);
 
 }
 
+
+
 .contact .link:focus,
 .contact .link:hover {
   color: var(--accent);
 }
+.link{
+  fill: var(--primary-text-color);
+}
+.link:hover .contact-nav-svg,
+.link:focus .contact-nav-svg{
+  fill: var(--accent);
+}
+
 
 
 /*Hiro*/
@@ -321,6 +336,7 @@ text-align: left;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  fill: #afb1b8;
   
 }
 .social-item{
@@ -334,11 +350,16 @@ margin-right: 0;
 .social-icon{
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  color: currentColor;
+}
+.social-titel:hover,
+.social-titel:focus {
+  background-color: var(--accent);
 }
 .social-titel:hover .social-icon,
 .social-titel:focus .social-icon{
-  fill: var(--accent);}
+  fill: var(--white);
+}
 /* Our customers */
 .customers{
   display: flex;
@@ -348,7 +369,7 @@ margin-right: 0;
 
 
 .customers-link{
-   display: inline-flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 170px;
@@ -367,7 +388,12 @@ margin-right: 0;
 .customers-icon{
   fill: #afb1b8
 }
-.customers-link:hover .customers-icon {
+.customers-link:hover, 
+.customers-link:focus  {
+  border-color: var(--accent);
+}
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
   fill: var(--accent);
 }
 
@@ -375,14 +401,13 @@ margin-right: 0;
 .footer {
   background: var(--background-color);
 }
+
+
 .footer-container{
   display: flex;
   align-items: baseline;
-}
-.container-logo{
-  display: flexbox;
-}
 
+}
 
 .logo-footer {
   display: inline-block;
@@ -405,7 +430,6 @@ margin-right: 0;
   font-style: normal;
 }
 .footer-link{
-  
   margin-bottom: 6px;
   
 }
@@ -418,8 +442,38 @@ margin-bottom: 0;
 }
 .social-link-footer{
   display: flex;
-    justify-content: center;
-    margin-top: 16px;
+  justify-content: center;
+  margin-top: 20px;
+  
+}
+.social-footer-link{
+  margin-left: 70px;
+}
+.social-title-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #afb1b8;
+  background-color: rgba(255, 255, 255, 0.1);;
+}
+.social-icon-footer{
+  width: 20px;
+  height: 20px;
+  fill: var(--white);
+}
+.social-item-footer{
+  margin-right: 10px;
+  flex-basis: calc((100% /4) * 10px)
+}
+.social-item-footer:last-child{
+  margin-right: 0px;
+}
+
+.social-title-footer:hover{
+  background-color: var(--accent);
 }
 .footer-tatel{
 font-size: 14px;
@@ -491,6 +545,10 @@ border-bottom: 1px solid #ECECEC;
   flex-basis : calc(100% / 3 - 30px);
 
   border: 1px solid #EEEEEE;
+}
+.portf-item:hover,
+.portf-item:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-work{
