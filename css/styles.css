@@ -321,6 +321,7 @@ text-align: left;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  
 }
 .social-item{
    margin-right: 10px;
@@ -329,40 +330,44 @@ text-align: left;
 .social-item:last-child {
 margin-right: 0;
 }
-.social-titel:hover .social-icon,
-.social-titel:focus .social-icon{
-  fill: var(--accent);
-}
+
 .social-icon{
   width: 20px;
   height: 20px;
-
+  fill: #afb1b8;
 }
+.social-titel:hover .social-icon,
+.social-titel:focus .social-icon{
+  fill: var(--accent);}
 /* Our customers */
 .customers{
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-  
-  
+  margin-right: -30px;  
 }
 
-.customers-list{
-  display: inline-flex;
+
+.customers-link{
+   display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 170px;
   height: 90px;
-  margin-right: 30px;
-  flex-basis: calc((100% / 6) - 30px);
   border: 1px solid #AFB1B8;
   box-sizing: border-box;
   border-radius: 4px;
 }
+.customers-list{
+  margin-right: 30px;
+  flex-basis: calc((100% / 6) - 30px);
+}
 .customers-list:last-child{
   margin-right: 0px;
 }
-.customers-link:hover .customers-ikon {
+.customers-icon{
+  fill: #afb1b8
+}
+.customers-link:hover .customers-icon {
   fill: var(--accent);
 }
 
@@ -372,8 +377,7 @@ margin-right: 0;
 }
 .footer-container{
   display: flex;
-  justify-content: left;
-  align-items: center;
+  align-items: baseline;
 }
 .container-logo{
   display: flexbox;
@@ -388,7 +392,6 @@ margin-right: 0;
   
 }
 .addres{
-  display: inline-block;
   margin-bottom: 60px;
 }
 
@@ -414,7 +417,9 @@ margin-bottom: 0;
   color: var(--primary-text-color);
 }
 .social-link-footer{
-  display: inline-flex;
+  display: flex;
+    justify-content: center;
+    margin-top: 16px;
 }
 .footer-tatel{
 font-size: 14px;
