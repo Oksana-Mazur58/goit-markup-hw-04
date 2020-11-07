@@ -121,7 +121,11 @@ body {
   margin-right: 10px;
 }
 .contact-nav-svg{
-  width: 15px;
+  width: 16px;
+
+}
+.nav-portfolio{
+  margin-right: 10px;
 }
 
 .contact .link {
