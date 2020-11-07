@@ -103,18 +103,27 @@ body {
 /*Contacts*/
 .contact{
   display: flex;
-}
-.contact-list{
-  display: block;
+  margin-left: auto;
   align-items: center;
   justify-content: center;
 }
+
 .contact-list .link{
-display: flex;
+ display: flex;
+ align-items: center;
+ margin-right: 30px;
+  
 }
-.contact :not(:last-child){
-  margin-right: 30px;
+.contact-list .link-tel{
+  margin-right: 0px;
 }
+.contact-list :not(:last-child) {
+  margin-right: 10px;
+}
+.contact-nav-svg{
+  width: 15px;
+}
+
 .contact .link {
   color: var(--primary-text-color);
 
