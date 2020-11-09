@@ -82,8 +82,8 @@ body {
 
 .site-nav .link, .contact .link {
   display: block;
-  padding-top: 39px;
-  padding-bottom: 40px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   font-size: 14px;
   font-weight: 500;
@@ -485,7 +485,8 @@ margin-bottom: 0;
   margin-right: 0px;
 }
 
-.social-title-footer:hover{
+.social-title-footer:hover,
+.social-title-footer:focus{
   background-color: var(--accent);
 }
 .footer-tatel{
@@ -501,7 +502,10 @@ text-transform: uppercase;
 
 /*Portfolio*/
 .header{ 
-border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
+  margin-right: auto;
+  margin-left: auto;
+
 }
 
 .portfolio-link{
