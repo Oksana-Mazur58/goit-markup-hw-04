@@ -132,7 +132,14 @@ body {
   color: var(--primary-text-color);
 
 }
-
+.mail-size{
+ width: 16px; 
+ height: 12px;
+}
+.tel-size{
+  width: 10px;
+  height: 16px;
+}
 
 
 .contact .link:focus,
@@ -397,6 +404,30 @@ margin-right: 0;
 }
 .customers-list:last-child{
   margin-right: 0px;
+}
+.icon-one{
+width: 44px;
+height: 49px;
+}
+.icon-two{
+width: 40px;
+height: 52px;
+}
+.icon-three{
+width: 41px;
+height: 42px;
+}
+.icon-four{
+width: 79px;
+height: 42px;
+}
+.icon-five{
+width: 59px;
+height: 47px;
+}
+.icon-six{
+width: 90px;
+height: 46px;
 }
 .customers-icon{
   fill: #afb1b8
